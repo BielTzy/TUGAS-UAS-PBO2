@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="2ce0fd66-7b6b-4f71-bab2-d884b1fd7355">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString language="SQL">
+		<![CDATA[select * from perusahaan_perkebunan]]>
+	</queryString>
+	<field name="id_usaha" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="nama_usaha" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="izin_usaha" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="alamat_usaha" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="telp" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="email" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="username" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="userpass" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<group name="id_usaha">
+		<groupExpression><![CDATA[$F{id_usaha}]]></groupExpression>
+	</group>
+	<group name="nama_usaha">
+		<groupExpression><![CDATA[$F{nama_usaha}]]></groupExpression>
+	</group>
+	<group name="izin_usaha">
+		<groupExpression><![CDATA[$F{izin_usaha}]]></groupExpression>
+	</group>
+	<group name="alamat_usaha">
+		<groupExpression><![CDATA[$F{alamat_usaha}]]></groupExpression>
+	</group>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<staticText>
+				<reportElement x="264" y="18" width="263" height="39" uuid="a0dd9f66-e174-444d-bbce-d06bdf14a43b"/>
+				<textElement>
+					<font size="26" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Laporan Perusahaan]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="61" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="22" width="100" height="20" uuid="c729c26c-1400-4484-8194-5bd87c47f854"/>
+				<text><![CDATA[id_usaha]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="100" y="22" width="100" height="20" uuid="db9761fb-43e6-4e75-b20d-cc64bab03a4f"/>
+				<text><![CDATA[nama_usaha]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="200" y="22" width="100" height="20" uuid="5d091a7d-ba56-428f-befa-85ab670494d2"/>
+				<text><![CDATA[izin_usaha]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="300" y="22" width="100" height="20" uuid="63f1603f-a8cc-4144-af66-e2ea0d8438de"/>
+				<text><![CDATA[alamat_usaha]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="400" y="22" width="100" height="20" uuid="931ee7d6-f848-4cfd-9bd1-97a8347189de"/>
+				<text><![CDATA[telp]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="500" y="22" width="100" height="20" uuid="6708f9b3-acda-4de2-9fef-a1a6139d6df6"/>
+				<text><![CDATA[email]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="600" y="22" width="100" height="20" uuid="e6ae7d7e-6bec-4c5e-9406-14536e25f4dc"/>
+				<text><![CDATA[username]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="702" y="22" width="100" height="20" uuid="9521593b-3c26-4376-bf91-33606ed4b42f"/>
+				<text><![CDATA[userpass]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="125" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="20" width="100" height="20" uuid="6bdefcf3-e3a2-4a8d-b035-a6ae32097e9a"/>
+				<textFieldExpression><![CDATA[$F{id_usaha}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="100" y="20" width="100" height="20" uuid="468c56bb-b039-45cd-9cec-4d9709997f2e"/>
+				<textFieldExpression><![CDATA[$F{nama_usaha}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="200" y="20" width="100" height="20" uuid="25640610-1433-441b-b5d1-2ef360b7b535"/>
+				<textFieldExpression><![CDATA[$F{izin_usaha}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="300" y="22" width="100" height="20" uuid="294dbaf0-4a14-427b-bfb8-dfada42315a1"/>
+				<textFieldExpression><![CDATA[$F{alamat_usaha}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="400" y="22" width="100" height="20" uuid="3f772280-2056-4725-afed-c0416d443ef1"/>
+				<textFieldExpression><![CDATA[$F{telp}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="500" y="22" width="100" height="20" uuid="c3d0ad8e-759d-4782-b2cd-127f9f77aabd"/>
+				<textFieldExpression><![CDATA[$F{email}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="602" y="22" width="100" height="20" uuid="f6a5b041-a5bf-4f52-94ae-6c829a94bc35"/>
+				<textFieldExpression><![CDATA[$F{username}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="700" y="22" width="100" height="20" uuid="58b67231-5987-46da-b777-48872f469c6f"/>
+				<textFieldExpression><![CDATA[$F{userpass}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>
