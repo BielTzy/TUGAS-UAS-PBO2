@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="5f8b4f1c-8ab9-49a4-a867-8d5a7bbad18f">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString language="SQL">
+		<![CDATA[select * from admin]]>
+	</queryString>
+	<field name="id_admin" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="nama_admin" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="username" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="userpass" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="telp" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="email" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<group name="id_admin">
+		<groupExpression><![CDATA[$F{id_admin}]]></groupExpression>
+	</group>
+	<group name="username">
+		<groupExpression><![CDATA[$F{username}]]></groupExpression>
+	</group>
+	<group name="telp">
+		<groupExpression><![CDATA[$F{telp}]]></groupExpression>
+	</group>
+	<group name="email">
+		<groupExpression><![CDATA[$F{email}]]></groupExpression>
+	</group>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<staticText>
+				<reportElement x="305" y="19" width="206" height="45" uuid="9bee54cc-7660-4cbb-b8b7-7ade1fa9b278"/>
+				<textElement>
+					<font size="26" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Laporan Admin]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="61" splitType="Stretch">
+			<staticText>
+				<reportElement x="12" y="22" width="100" height="20" uuid="edd692f0-5ddb-4138-a4c3-931ec6e198b5"/>
+				<text><![CDATA[id_admin]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="145" y="22" width="100" height="20" uuid="96900cbc-19dd-4602-988f-b06faa91cc0f"/>
+				<text><![CDATA[nama_admin]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="288" y="22" width="100" height="20" uuid="c84bf381-0bee-4e90-ab70-4b707e10bc40"/>
+				<text><![CDATA[username]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="428" y="22" width="100" height="20" uuid="0bfc8780-fd29-4dd2-b3df-749797df999e"/>
+				<text><![CDATA[userpass]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="567" y="22" width="100" height="20" uuid="1f7e1f42-f439-4092-8d5b-83b0da6e9b41"/>
+				<text><![CDATA[telp]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="702" y="22" width="100" height="20" uuid="2ee98da3-c340-4c2e-8348-92103213ecc8"/>
+				<text><![CDATA[email]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="125" splitType="Stretch">
+			<textField>
+				<reportElement x="12" y="52" width="100" height="20" uuid="ad47b359-4f48-4ff4-b8eb-e92d4492dcb6"/>
+				<textFieldExpression><![CDATA[$F{id_admin}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="145" y="52" width="100" height="20" uuid="eece3b2f-daf7-45e1-acbf-b8914dbf7762"/>
+				<textFieldExpression><![CDATA[$F{nama_admin}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="288" y="52" width="100" height="20" uuid="95cb5f33-52b7-4311-ab34-a6ada772a2c0"/>
+				<textFieldExpression><![CDATA[$F{username}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="428" y="52" width="100" height="20" uuid="fe10dd15-3063-415e-8ca7-4f75f21fba9c"/>
+				<textFieldExpression><![CDATA[$F{userpass}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="567" y="52" width="100" height="20" uuid="8ff9a8ed-e8ef-48fa-afaf-9e4579a55dd5"/>
+				<textFieldExpression><![CDATA[$F{telp}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="702" y="52" width="100" height="20" uuid="0b459e01-35ca-4dea-9184-f7a8f9e33bbd"/>
+				<textFieldExpression><![CDATA[$F{email}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="9beb551d-03b4-479a-a0b6-8568f70d39f1">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString language="SQL">
+		<![CDATA[select * from komoditi]]>
+	</queryString>
+	<field name="id_komoditi" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="nama_komoditi" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="skrips_komoditi" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="lokasi_komoditi" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="produsen" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="persediaan" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="harga" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<group name="id_komoditi">
+		<groupExpression><![CDATA[$F{id_komoditi}]]></groupExpression>
+	</group>
+	<group name="nama_komoditi">
+		<groupExpression><![CDATA[$F{nama_komoditi}]]></groupExpression>
+	</group>
+	<group name="lokasi_komoditi">
+		<groupExpression><![CDATA[$F{lokasi_komoditi}]]></groupExpression>
+	</group>
+	<group name="produsen">
+		<groupExpression><![CDATA[$F{produsen}]]></groupExpression>
+	</group>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<staticText>
+				<reportElement x="276" y="20" width="239" height="37" uuid="f026e2c8-b878-4291-9756-fcbac72caf24"/>
+				<textElement>
+					<font size="26" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Laporan Komoditi]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="61" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="22" width="100" height="20" uuid="8d93e81c-5145-48a5-bb86-f17ee24b8bd5"/>
+				<text><![CDATA[id_komoditi]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="111" y="22" width="100" height="20" uuid="6217bf0a-e792-4939-9894-82ab3627890e"/>
+				<text><![CDATA[nama_komoditi]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="226" y="22" width="100" height="20" uuid="4a8036c0-b4c0-4f44-af73-4df380269e9a"/>
+				<text><![CDATA[skrips_komoditi]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="344" y="22" width="100" height="20" uuid="612fde61-8596-48c4-a447-0f2e2f7030bd"/>
+				<text><![CDATA[lokasi_komoditi]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="462" y="22" width="100" height="20" uuid="c4a1424b-8c79-4a04-b3b6-13c7c789be68"/>
+				<text><![CDATA[produsen]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="583" y="22" width="100" height="20" uuid="6de0ea89-41d0-4c24-9ad8-ef38a78b9b3e"/>
+				<text><![CDATA[persediaan]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="702" y="22" width="100" height="20" uuid="c8bc3c84-ac81-49d6-ad5d-049585425b83"/>
+				<text><![CDATA[harga]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="125" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="26" width="100" height="20" uuid="1215a08a-becc-4c44-9240-c444df9799fe"/>
+				<textFieldExpression><![CDATA[$F{id_komoditi}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="111" y="26" width="100" height="20" uuid="4553034a-7db1-4d56-9592-222aab975640"/>
+				<textFieldExpression><![CDATA[$F{nama_komoditi}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="226" y="26" width="100" height="20" uuid="792c6d86-6876-4798-89b1-e7c227677f1c"/>
+				<textFieldExpression><![CDATA[$F{skrips_komoditi}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="344" y="26" width="100" height="20" uuid="d834f441-840c-4d83-8c1e-451820cbfcc9"/>
+				<textFieldExpression><![CDATA[$F{lokasi_komoditi}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="462" y="26" width="100" height="20" uuid="b74389f6-e9cf-431d-a645-db9f9a5bfdcb"/>
+				<textFieldExpression><![CDATA[$F{produsen}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="583" y="26" width="100" height="20" uuid="ad074f58-f323-468b-b095-cd47c652deb5"/>
+				<textFieldExpression><![CDATA[$F{persediaan}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="702" y="26" width="100" height="20" uuid="45e40ada-d255-4fa8-87a4-61b7384a6877"/>
+				<textFieldExpression><![CDATA[$F{harga}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>
